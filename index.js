@@ -1,0 +1,1 @@
+const splashImg = document.getElementById("")

@@ -1,0 +1,424 @@
+
+/* =================
+    Site Layout 
+   ================= */
+html,
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+    color: #151515;
+    background-color: hsla(240, 14%, 96%, 0.742);
+    max-width: 1800px;
+}
+
+.site-header {
+    padding: 0 1.5em 0 1.25em;
+    display: flex;
+    align-items: center;
+}
+
+i {
+    color: darkslateblue;
+    margin-right: 8px;
+    width: 1.5em;
+}
+
+nav {
+    margin-left: auto;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.splash {
+    background-image: url("/images/lukas-blazek-GnvurwJsKaY-unsplash.jpg");
+    background-size: cover;
+    height: 35vh;
+    padding: 2.595em 0 0 0.4em;
+    border-radius: 4px;
+}
+
+img {
+    width: 100%;
+    border-radius: 3px;
+    height: 35vh;
+    margin: 0 0 0.875em 0;
+}
+
+.blog-section,
+.recent-posts-el {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px, 90vw));
+    gap: 1em;
+    grid-template-areas: 
+    "card-1"
+    "card-2"
+    "card-3";
+    margin: 2.5em 1.25em;
+}
+
+.card {
+    margin-bottom: 0.875em;
+    border-radius: 3px;
+    padding: 0.5em;
+}
+
+.card:hover,
+.grid-item:hover {
+    text-decoration: none;
+    color: inherit;
+    background-color: rgba(193, 195, 196, 0.252);
+}
+
+.extended-section {
+    display: flex;
+    justify-content: center;
+}
+
+/* =====================
+    Projects container
+   ===================== */
+
+.projects .container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1em;
+    grid-template-areas: 
+    "diner"
+    "venue"
+    "seminar"
+    "link";
+    margin: 2.5em 1.25em;
+}
+
+.grid-item {
+    height: auto;
+    border-radius: 6px;
+    text-align: center;
+    padding: 1em 0.5em 0 0.5em;
+}
+
+.grid-item h2 {
+    font-size: 1.3rem;
+}
+
+.container a:hover {
+    text-decoration: none;
+}
+
+.diner {
+    grid-area: diner;
+}
+
+.venue {
+    grid-area: venue;
+}
+
+.seminar {
+    grid-area: seminar;
+}
+    
+.link {
+    grid-area: link;
+}
+
+/* =================
+    Typography
+   ================= */
+
+/* .source-sans-3 {
+    font-family: "Source Sans 3", sans-serif;
+} */
+
+.site-header {
+    font-size: 0.9rem;
+}
+
+h2 {
+    font-size: 0.844rem;
+}
+
+ul {
+    font-size: 0.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover, 
+a:focus,
+.btn:hover,
+.btn:focus,
+.link-to-full-projects-page a:hover, 
+.link-to-full-projects-page a:focus {
+    cursor: pointer;
+    text-decoration: underline;
+    color: darkslateblue;
+}
+
+.splash {
+    color: #232e39;
+    font-weight: 700;
+    font-size: 2.5rem; /* 32px */
+}
+
+h1 {
+    max-width: 500px;
+    letter-spacing: -3%;
+    line-height: 108.2%;
+    margin: 0;
+    text-shadow: -4px 4px 8px #7f97ae;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 0.563em 0;
+}
+
+.btn {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: underline;
+    background-color: transparent;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.75rem;
+    background-color: #202020;
+    min-height: 100px;
+    padding: 2.313em 9.563em;
+
+}
+
+footer p {
+    color: #ECECEC;
+    font-weight: 700;
+    padding-top: 2.313em;
+    margin-bottom: 0;
+}
+
+footer span {
+    color: #D7D7D7;
+    margin-top: 0.25em;
+}
+
+.link-to-full-projects-page {
+    text-align: center;
+    font-weight: 700;
+    margin: 1.25em 0;
+}
+
+/* =================
+    About Me page
+   ================= */
+
+.about-me-page {
+    margin-top: 2.667em;
+}
+
+.about-me-el {
+    margin: 0 1em;
+}
+
+.michelle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: block;
+}
+
+/* .about-me-date {
+    font-size: 0.75rem;
+} */
+
+.about-me-title {
+    font-size: 2em;
+    letter-spacing: -3%;
+    line-height: 108.2%;
+}
+
+.about-me-el img {
+    margin: 2.188em 0;
+}
+
+h4{
+    text-align: center;
+}
+
+
+/* =================
+    Blog full pages
+   ================= */
+
+.blog-full-entry {
+    margin: 2.5em;
+}
+
+.blog-full-entry h2 {
+    font-size: 1.542em;
+}
+
+/* =================
+    Media Queries
+   ================= */
+
+@media (min-width: 725px) {
+
+    .site-header {
+        height: 5vw;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 1.5vw;
+        margin: 0;
+    }
+    
+    li {
+        margin-left: 8px;
+        font-size: 1.3vw;
+    }
+
+    .splash {
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        padding: 0.5em 0 0 2em;
+    }
+
+    /* .splash span {
+        align-self: start;
+        margin-top: 0.5em;
+    } */
+
+    /* blog grid */
+    .blog-section {
+        gap: 1.625em; 
+        grid-template-columns: repeat(3, minmax(200px, 33vw));
+        grid-template-rows: 1fr;
+        margin: 2.5em 1.9em;
+    }
+
+    .card-1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .card-2 {
+        grid-column: 2 /3;
+        grid-row: 1 / 2;
+    }
+
+    .card-3 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .extended-section {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    /* projects grid */
+    .projects .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "diner venue seminar"
+            ".... link ....";
+    }
+
+    .grid-item h2 {
+        margin-bottom: 8px;
+    }
+
+    /* about me page */
+    .about-me-page {
+        margin-top: 1em;
+    }
+
+    .about-me-header {
+        display: flex;
+        align-items: center;
+        padding: 0 1em;
+    }
+
+    .welcome-statement {
+        margin: 4em 0.9em 4em 2.063em;
+    }
+
+    p {
+        margin: 0.6em 0;
+    }
+
+    #about-me-article {
+        margin: 0.6em 5em;
+        padding-top: 2.5em;
+        border-top: 1px solid #7f97ae;
+    }
+    /* full blog pages */
+    .blog-full-entry {
+        margin: 2.5em 4em;
+    }
+
+    .blog-full-entry img {
+        height: 50vh;
+
+    }
+
+    .blog-full-entry,
+    .blog-full-entry img {
+        max-width: 1000px;
+    }
+
+    .blog-full-entry h2 {
+        margin-bottom: 1.5em;
+    }
+}
+
+@media (min-width: 1280px) {
+    i,
+    h2,
+    li {
+        font-size: 20px;
+    }
+
+    .site-header {
+        height: 60px;
+
+    }
+
+    h1 {
+        font-size: 100px;
+    }
+
+    /* full blog pages */
+    .blog-full-entry {
+        margin: 2.5em auto;
+    }
+
+    .blog-full-entry img {
+        margin-bottom: 2em;
+    }
+
+    /* projects grid */
+    .projects .container {
+        margin: 2.5em 3.25em;
+    }
+
+    .grid-item {
+        width: 400px;
+        margin: 2.5em 0;
+    }
+}
