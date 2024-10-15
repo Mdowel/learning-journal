@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Learning Journal</title>
+        <link rel="stylesheet" href="css/index.css">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" 
+        rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header class="site-header">
+            <i class="fa-solid fa-feather"></i>
+            <h2>My Learning Journal</h2>
+        <!-- Site Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- projects blog -->
+        <article class="blog-full-entry">
+            <img src="images/diego-ph-fIq0tET6llw-unsplash.jpg" alt="debugging blog">
+            <h2>
+                Mastering Debugging: Tips for Frontend Developers
+            </h2>
+            <p>As a beginner frontend developer, you’ll inevitably encounter bugs—those pesky, unexpected behaviors in your code 
+                that leave you scratching your head. But instead of dreading them, view debugging as an opportunity to improve your skills. 
+                Learning how to efficiently debug can save you hours of frustration and help you grow as a developer. Here are some essential 
+                tips to help you debug like a pro.
+            </p>
+            <br>
+            <p>
+                <strong>1. Understand the Problem</strong>
+                <br>
+                Before you dive into fixing a bug, take a step back and try to understand the issue clearly. Ask yourself these questions:
+                <br>
+                <ul class="debugging-list">
+                    <li>What did you expect to happen?</li>
+                    <li>What is actually happening?</li>
+                    <li>What part of the code might be causing this behavior?</li>
+                </ul>
+            </p>
+            <p>
+                Isolating the problem is the first and most important step. Take the time to replicate the issue consistently, so you know exactly 
+                when it occurs. This will give you a better idea of where to look and what might need to be fixed.
+            </p>
+
+            <p>
+                <strong>2. Use Browser Developer Tools</strong>
+                <p>Every modern browser comes with built-in developer tools, which are invaluable for debugging frontend code. Whether you're working 
+                    with HTML, CSS, or JavaScript, these tools allow you to inspect elements, check CSS properties, and debug JavaScript in real time.
+                </p>
+            </p>
+
+            <p>
+                <strong>3. Console Log Everything</strong>
+                <p>One of the simplest but most effective debugging techniques is using console.log(). This function lets you print values and variables 
+                    in your JavaScript code to the console, so you can see what’s happening at different stages of your program.</p>
+                
+                <p>Use console.log() to:
+                    <ul class="debugging-list">
+                        <li>Check the value of variables</li>
+                        <li>Trace function executions</li>
+                        <li>See the flow of conditional statements</li>
+                    </ul>
+                But be careful not to overuse it—too many logs can clutter your console and make it harder to find useful information. 
+                </p>
+            </p>
+
+            <p>
+                <strong>4. Check for Typos and Syntax Errors</strong>
+                <p>
+                    Sometimes the most frustrating bugs are the simplest: a misspelled variable, a missing semicolon, or a mismatched tag. Double-check your 
+                    code for small syntax errors that can cause big problems. Modern code editors like VSCode can highlight these errors for you, but sometimes 
+                    they slip through, especially in larger projects.
+                </p> 
+                Be systematic—if something isn’t working as expected, go back and check that everything is spelled and written correctly. It may save you a lot of time.
+            </p>
+            
+            <p>
+                <strong>5. Work in Small Steps</strong>
+                <p>
+                    If you’re debugging a larger project or feature, try to isolate and fix one thing at a time. When you make multiple changes at once, it can be hard 
+                    to figure out what solved the problem (or made it worse!). Tackle one issue at a time and test each solution before moving on to the next.
+                </p>
+
+                <p>
+                    Additionally, breaking your code down into smaller, testable parts can help pinpoint where things are going wrong. For example, if a function is 
+                    misbehaving, try calling it with different inputs to see how it behaves in isolation.
+                </p>
+            </p>
+            
+            <p>
+                <strong>6. Leverage Stack Overflow and Documentation</strong>
+                <p>
+                    If you're stuck on a bug, there’s no shame in seeking help online. Stack Overflow is an excellent resource for finding answers to common problems. 
+                    Someone else has likely run into the same issue you’re facing, and there’s often a solution posted. But be sure to read the documentation of the language, 
+                    framework, or tool you’re working with as well. Official documentation is often the best place to start when troubleshooting.
+                </p>
+            </p>
+
+            <p>
+                <strong>7. Take a Break</strong>
+                <p>
+                    Sometimes the best way to fix a bug is to take a break. If you’ve been staring at the same code for hours and can’t figure out what’s wrong, step away from it. 
+                    Giving your mind a rest allows you to come back with fresh eyes, and you’ll often spot the issue right away.
+                </p>    
+            </p>   
+            <br>
+            <p>
+                <strong>Final Thoughts</strong>
+                <p>
+                    Debugging is an essential part of being a frontend developer. The more bugs you encounter and solve, the better you’ll get at understanding how your code works and why it breaks. 
+                    With practice, patience, and the right tools, you’ll develop a debugging process that makes tackling bugs less daunting and more rewarding. Keep experimenting, keep solving, and 
+                    most importantly—don’t give up! Each bug is a step closer to mastering your craft.
+                </p>
+            </p>
+        </article>
+        <!-- projects showcase -->
+        <section class="projects">
+            <div class="container">
+                <a href="https://fanciful-tulumba-c18908.netlify.app/"
+                class="diner"
+                aria-label="">
+                    <article class="grid-item">
+                        <header class="article-header">
+                            <h2>Online ordering app</h2>
+                        </header>
+                        <img src="images/project-screenshots/diner.png" alt="">
+                    </article>
+                </a>
+
+                <a href="https://royaltheater.netlify.app/"
+                class="venue"
+                aria-label="">
+                    <article class="grid-item">
+                        <header class="article-header">
+                            <h2>Concert venue</h2>
+                        </header>
+                        <img src="images/project-screenshots/royal-theater.png" alt="">
+                    </article>
+                </a>
+
+                <a href="https://rainbow-maamoul-c567b2.netlify.app/"
+                class="seminar"
+                aria-label="">
+                    <article class="grid-item">
+                        <header class="article-header">
+                            <h2>Seminar registration</h2>
+                        </header>
+                        <img src="images/project-screenshots/seminar-signup.png" alt="">
+                    </article>
+                </a>
+                <div class="link-to-full-projects-page link">
+                    <a href="projects.html" >View More</a>
+                </div>  
+            </div>
+        <!-- footer -->
+        <footer>    
+            <p>My Learning Journal</p>
+            <span>Copyright &copy;2024</span>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
