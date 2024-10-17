@@ -96,7 +96,8 @@ img {
     grid-template-areas: 
     "palette"
     "vanlife"
-    "seminar";
+    "seminar"
+    "link";
     margin: 2.5em 1.25em;
 }
 
@@ -130,6 +131,10 @@ img {
 
 .vanlife {
     grid-area: vanlife;
+}
+
+.link {
+    grid-area: link
 }
 
 /* =================
@@ -337,7 +342,8 @@ h4{
     .projects .container {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
-            "palette vanlife seminar";
+            "palette vanlife seminar"
+            "... link ...";
     }
 
     .grid-item h2 {
