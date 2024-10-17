@@ -95,9 +95,8 @@ img {
     gap: 1em;
     grid-template-areas: 
     "palette"
-    "venue"
-    "seminar"
-    "link";
+    "vanlife"
+    "seminar";
     margin: 2.5em 1.25em;
 }
 
@@ -110,19 +109,16 @@ img {
 
 .grid-item h2 {
     font-size: 1.3rem;
+    text-transform: capitalize;
 }
 
 .container a:hover {
     text-decoration: none;
 }
 
-/* .diner {
-    grid-area: diner;
-} */
-
-.venue {
+/* .venue {
     grid-area: venue;
-}
+} */
 
 .seminar {
     grid-area: seminar;
@@ -132,17 +128,13 @@ img {
     grid-area: palette;
 }
 
-.link {
-    grid-area: link;
+.vanlife {
+    grid-area: vanlife;
 }
 
 /* =================
     Typography
    ================= */
-
-/* .source-sans-3 {
-    font-family: "Source Sans 3", sans-serif;
-} */
 
 .site-header {
     font-size: 0.9rem;
@@ -304,11 +296,6 @@ h4{
         padding: 0.5em 0 0 2em;
     }
 
-    /* .splash span {
-        align-self: start;
-        margin-top: 0.5em;
-    } */
-
     /* blog grid */
     .blog-section {
         gap: 1.625em; 
@@ -339,15 +326,13 @@ h4{
 
     /* .card {
         max-width: fit-content;
-
     } */
 
     /* projects grid */
     .projects .container {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
-            "palette venue seminar"
-            ".... link ....";
+            "palette vanlife seminar";
     }
 
     .grid-item h2 {
@@ -382,20 +367,21 @@ h4{
     /* full blog pages */
     .blog-full-entry {
         margin: 2.5em 4em;
-    }
-
-    .blog-full-entry img {
-        height: 50vh;
-
-    }
-
-    .blog-full-entry,
-    .blog-full-entry img {
         max-width: 1000px;
+        display: flex;
+        flex-direction: column;
     }
+
+    .blog-full-entry img {
+        height: 60vh;
+        max-width: 700px;
+        align-self: center;
+        border-radius: 6px;
+    }
+
 
     .blog-full-entry h2 {
-        margin-bottom: 1.5em;
+        margin: 1em 0 1.5em 0;
     }
 }
 
