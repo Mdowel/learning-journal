@@ -144,6 +144,11 @@ h2 {
     font-size: 0.844rem;
 }
 
+.main-title:hover {
+    text-decoration: none;
+    color: initial;
+}
+
 ul {
     font-size: 0.8rem;
 }
